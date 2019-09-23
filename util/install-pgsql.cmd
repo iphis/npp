@@ -1,16 +1,21 @@
 rem Created by Lucas Schmitt at TK-Schulsoftware
-
 @ECHO OFF
 call config.cmd
 
-util\unzip.exe util\install-pgsql.zip
+echo === Downloading PosgreSQL-%PGSQL_VERSION% ===
+powershell -Command "Invoke-WebRequest https://get.enterprisedb.com/postgresql/postgresql-%PGSQL_VERSION%-1-windows-x64-binaries.zip -OutFile postgres-%PGSQL_VERSION%.zip"
 
-pgsql\bin\initdb.exe -E UTF8 -D pgsql\data
+util\unzip.exe postgres-%PGSQL_VERSION%.zip
+mkdir postgres
+move pgsql postgres\%PGSQL_VERSION%
+del postgres-%PGSQL_VERSION%.zip
 
-start "" pgsql\bin\pg_ctl.exe start -D pgsql\data -l pgsql\log
+postgres\%PGSQL_VERSION%\bin\initdb.exe -E UTF8 -D postgres\%PGSQL_VERSION%\data
 
-pgsql\bin\createuser.exe -d -r -s postgres
+start "" postgres\%PGSQL_VERSION%\bin\pg_ctl.exe start -D postgres\%PGSQL_VERSION%\data -l postgres\%PGSQL_VERSION%\log
 
-start "" pgsql\bin\pg_ctl.exe stop -D pgsql\data
+postgres\%PGSQL_VERSION%\bin\createuser.exe -d -r -s postgres
+
+start "" postgres\%PGSQL_VERSION%\bin\pg_ctl.exe stop -D postgres\%PGSQL_VERSION%\data
 
 msg "%username%"  Installed Postgres-10.9 successfully.
