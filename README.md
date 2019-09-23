@@ -16,10 +16,11 @@ NginxPhpPostgres Development Stack for **Windows**
 
 ---
 
-By Default a example.com Test Page will be Hosted, you can access it by editing the hosts File.\
-(Usually located under ```C:\Windows\System32\drivers\etc```)\
+#### Example.com
+By Default a example.com Test Page will be Hosted, you will need to edit the hosts File.\
+(Usually located under ```C:\Windows\System32\drivers\etc\hosts```)\
 Add ``127.0.0.1		example.com`` at the end of file.\
-You should now be able to access the self hosted example.com domain.
+You should now be able to access the self hosted example.com domain in your Browser.
 
 ---
 
