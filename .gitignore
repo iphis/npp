@@ -1,6 +1,6 @@
 *.zip
 nginx/
-postgres/
+pgsql/
 php/
 
 sites/*
