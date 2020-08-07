@@ -1,6 +1,7 @@
 config.cmd
 
 *.zip
+*.sql
 nginx/
 pgsql/
 php/

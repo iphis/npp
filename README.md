@@ -44,9 +44,9 @@ You should now be able to access the self hosted example.com domain in your Brow
 ##### Postgres Versions
 
 (Source: https://www.enterprisedb.com/download-postgresql-binaries)
-- 11.5
-- 10.10
-- 9.6.15
+- 12.3
+- 11.8
+- 10.13
 
 ---
 
