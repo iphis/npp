@@ -1,5 +1,3 @@
-rem Created by Lucas Schmitt at TK-Schulsoftware
-
 set NGINX_VERSION=1.17.0
-set PHP_VERSION=7.2.21
-set PGSQL_VERSION=11.5
+set PHP_VERSION=7.4.8
+set DISABLE_PGADMIN=TRUE

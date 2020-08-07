@@ -1,5 +1,3 @@
-rem Created by Lucas Schmitt at TK-Schulsoftware
-
 @ECHO OFF
 echo === Installing Nginx ===
 call util\install-nginx.cmd
