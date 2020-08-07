@@ -7,6 +7,6 @@ IF "%DISABLE_PGADMIN%"=="TRUE" (
 exit
 )
 echo === Starting PGAdmin 4 (PostgreSQL) ===
-util\RunHiddenConsole.exe "pgsql\pgAdmin 4\bin\pgAdmin4.exe"
+util\RunHiddenConsole.exe "postgres\%PGSQL_VERSION%\pgAdmin 4\bin\pgAdmin4.exe"
 echo Started pgAdmin4
 sleep 2
