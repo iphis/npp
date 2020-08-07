@@ -39,7 +39,7 @@ You should now be able to access the self hosted example.com domain in your Brow
 - 7.1.31
 - 7.2.21
 - 7.3.8
-- 7.4.9
+- 7.4.8
 
 ##### Postgres Versions
 
