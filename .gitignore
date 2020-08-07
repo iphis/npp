@@ -2,3 +2,9 @@
 nginx/
 postgres/
 php/
+
+sites/*
+!sites/example.com.conf
+
+www/*
+!www/example.com
