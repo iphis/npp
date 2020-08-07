@@ -3,14 +3,22 @@ rem Created by Lucas Schmitt at TK-Schulsoftware
 @ECHO OFF
 call config.cmd
 
+if not [%1] == [] set NGINX_VERSION=%1
+
+IF not exist nginx mkdir nginx
+cd nginx
+
 echo === Downloading Ngnix-%NGINX_VERSION% ===
 powershell -Command "Invoke-WebRequest https://nginx.org/download/nginx-%NGINX_VERSION%.zip -OutFile nginx-%NGINX_VERSION%.zip"
 
-util\unzip.exe nginx-%NGINX_VERSION%.zip
-mkdir nginx
-move nginx-%NGINX_VERSION% nginx\nginx-%NGINX_VERSION%
+cd ..
+util\unzip.exe nginx\nginx-%NGINX_VERSION%.zip
+move nginx-%NGINX_VERSION% nginx\%NGINX_VERSION%
+
+cd nginx
 del nginx-%NGINX_VERSION%.zip
+cd ..
 
-xcopy /y util\install-nginx.conf nginx\nginx-%NGINX_VERSION%\conf\nginx.conf
+xcopy /y util\install-nginx.conf nginx\%NGINX_VERSION%\conf\nginx.conf
 
-msg "%username%"  Installed Ngnix-%NGINX_VERSION% successfully.
+echo === Installed Ngnix-%NGINX_VERSION% successfully ===

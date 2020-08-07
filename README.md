@@ -34,7 +34,7 @@ You should now be able to access the self hosted example.com domain in your Brow
 ##### PHP Versions
 
 (Source: https://windows.php.net/downloads/releases/archives/)
-- 5.6.40
+- 5.6
 - 7.0.33
 - 7.1.31
 - 7.2.21
