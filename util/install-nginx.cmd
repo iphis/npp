@@ -1,5 +1,4 @@
 rem Created by Lucas Schmitt at TK-Schulsoftware
-
 @ECHO OFF
 call config.cmd
 

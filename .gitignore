@@ -3,7 +3,7 @@ config.cmd
 *.zip
 *.sql
 nginx/
-pgsql/
+postgres/
 php/
 
 sites/*

@@ -1,7 +1,6 @@
 rem Created by Lucas Schmitt at TK-Schulsoftware
-
 echo === Starting PostgreSQL ===
-start /B "" pgsql\bin\pg_ctl.exe start -D pgsql\data -l pgsql\log
+start /B "" postgres\%PGSQL_VERSION%\bin\pg_ctl.exe start -D postgres\%PGSQL_VERSION%\data -l postgres\%PGSQL_VERSION%\log
 sleep 2
 echo Started PostgreSQL
 IF "%DISABLE_PGADMIN%"=="TRUE" (

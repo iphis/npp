@@ -1,6 +1,7 @@
+rem Created by Lucas Schmitt at TK-Schulsoftware
 @ECHO OFF
 
-if not [%1] == []  GOTO $1
+if not [%1] == []  GOTO %1
 
 :NGINX
     call util\install-nginx.cmd %2
