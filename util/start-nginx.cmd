@@ -4,5 +4,4 @@ echo === Starting nginx-%NGINX_VERSION% ===
 cd nginx\%NGINX_VERSION%
 start nginx
 cd..\..
-echo Started nginx
-pause
+echo === Started nginx ===
