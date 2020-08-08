@@ -18,6 +18,6 @@ cd nginx
 del nginx-%NGINX_VERSION%.zip
 cd ..
 
-xcopy /y util\install-nginx.conf nginx\%NGINX_VERSION%\conf\nginx.conf
+xcopy /y /f util\install-nginx.conf nginx\%NGINX_VERSION%\conf\nginx.conf
 
 echo === Installed Ngnix-%NGINX_VERSION% successfully ===

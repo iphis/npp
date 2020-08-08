@@ -25,7 +25,7 @@ powershell -Command "Invoke-WebRequest https://windows.php.net/downloads/release
 ..\..\util\unzip.exe php-%PHP_VERSION%.zip
 del php-%PHP_VERSION%.zip
 
-xcopy /y ..\..\util\install-php.ini php.ini
+xcopy /y /f ..\..\util\install-php.ini php.ini
 
 cd ..
 cd ..
