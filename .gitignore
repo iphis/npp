@@ -5,6 +5,7 @@ config.cmd
 nginx/
 postgres/
 php/
+redis/
 
 sites/*
 !sites/example.com.conf

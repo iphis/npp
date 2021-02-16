@@ -28,12 +28,12 @@ You should now be able to access the self hosted example.com domain in your Brow
 
 ##### Nginx Versions
 
-(Source: https://nginx.org/download/)
+(Source: https://nginx.org/download/ )
 - 1.17.0 or higher
 
 ##### PHP Versions
 
-(Source: https://windows.php.net/downloads/releases/archives/)
+(Source: https://windows.php.net/downloads/releases/archives/ )
 - 5.6
 - 7.0.33
 - 7.1.31
@@ -43,7 +43,7 @@ You should now be able to access the self hosted example.com domain in your Brow
 
 ##### Postgres Versions
 
-(Source: https://www.enterprisedb.com/download-postgresql-binaries)
+(Source: https://www.enterprisedb.com/download-postgresql-binaries )
 - 12.3
 - 11.8
 - 10.13

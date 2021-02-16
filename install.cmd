@@ -16,6 +16,11 @@ GOTO PGSQL
 :PGSQL
     call util\install-pgsql.cmd %2
     if not [%1] == []  GOTO EXIT
+GOTO REDIS
+
+:REDIS
+    call util\install-redis.cmd
+    if not [%1] == []  GOTO EXIT
 GOTO EXIT
 
 :EXIT

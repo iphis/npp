@@ -13,5 +13,7 @@ if "%DISABLE_PGADMIN%"=="TRUE" goto EXIT
 
 taskkill /f /IM pgAdmin4.exe
 
+taskkill /f /IM redis-server.exe
+
 :EXIT
 echo === Stopped NPP successfully ===

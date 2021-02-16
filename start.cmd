@@ -12,4 +12,7 @@ util\RunHiddenConsole.exe util\start-php.cmd
 echo === Starting PGSQL ===
 util\RunHiddenConsole.exe util\start-psql.cmd
 
+echo === Starting Redis ===
+util\RunHiddenConsole.exe util\start-redis.cmd
+
 echo === Started NPP successfully ===
